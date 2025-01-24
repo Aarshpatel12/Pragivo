@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pragati - Reels</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="top_nav_bar">
+        <nav>
+            <ul class="nav_buttons">
+             
+               
+                
+            </ul>
+        </nav>
+    </div>
+
+    <div class="reels-container">
+        <div class="reel">
+            <video controls autoplay loop muted>
+                <source src="reel1w.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="reel">
+            <video controls autoplay loop muted>
+                <source src="reel2w.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="reel">
+            <video controls autoplay loop muted>
+                <source src="reel3w.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="reel">
+            <video controls autoplay loop muted>
+                <source src="reel4w.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="reel">
+            <video controls autoplay loop muted>
+                <source src="reel5w.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+
+    <script>
+        // Smooth scroll for reels
+        const container = document.querySelector('.reels-container');
+        container.addEventListener('wheel', (e) => {
+            e.preventDefault();
+            container.scrollBy({
+                top: e.deltaY,
+                left: 0,
+                behavior: 'smooth',
+            });
+        });
+    </script>
+</body>
+</html>

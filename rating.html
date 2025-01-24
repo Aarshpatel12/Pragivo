@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pragati - Ratings</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .search-container {
+            position: absolute; /* Position it in the upper left corner */
+            top: 20px; /* Adjust as needed */
+            left: 20px; /* Adjust as needed */
+            display: flex; /* Use flexbox for alignment */
+            align-items: center; /* Center vertically */
+            z-index: 1000; /* Ensure it appears above other elements */
+        }
+
+        .search-input {
+            padding: 5px; /* Smaller padding for a mini box */
+            border: 1px solid #88520a;
+            border-radius: 5px;
+            margin-right: 5px; /* Space between input and button */
+            width: 150px; /* Set a fixed width for the input */
+        }
+
+        .search-button {
+            padding: 5px; /* Smaller padding for a mini button */
+            background-color: #3498db; /* Button color */
+            color: rgb(82, 146, 9);
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 0.9rem; /* Slightly smaller font size */
+        }
+
+        .search-button:hover {
+            background-color: #2980b9; /* Darker shade on hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="search-container">
+        <input type="text" placeholder="Search..." class="search-input">
+        <button class="search-button">
+            <i class="fa fa-search"></i> Search
+        </button>
+    </div>
+    
+    <div id="top_nav_bar">
+        <nav>
+            <ul class="nav_buttons">
+                <li><a href="home2.html">Home</a></li>
+                <li><a href="reel.html">Reel</a></li>
+                <li><a href="rating.html">Rating/Compare</a></li>
+                <li><a href="expert.html">Expert Connect(Architect/Design/Electricians)</a></li>
+                <li><a href="vertual.html">Virtual AI home-modification</a></li>
+                <li><a href="service.html">Service</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="content">
+        <h1>Customer Ratings for Wires and Products</h1>
+        <p>Compare ratings of products from different companies to make an informed decision.</p>
+
+        <!-- Ratings Table -->
+        <div class="rating_table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Product</th>
+                        <th>Company</th>
+                        <th>Rating</th>
+                        <th>Reviews</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Copper Wire</td>
+                        <td>Havells</td>
+                        <td>⭐⭐⭐⭐☆ (4.5)</td>
+                        <td><a href="#havells">View Reviews</a></td>
+                    </tr>
+                    <tr>
+                        <td>Electrical Cable</td>
+                        <td>Polycab</td>
+                        <td>⭐⭐⭐⭐☆ (4.3)</td>
+                        <td><a href="#polycab">View Reviews</a></td>
+                    </tr>
+                    <tr>
+                        <td>Data Cable</td>
+                        <td>Finolex</td>
+                        <td>⭐⭐⭐⭐⭐ (4.8)</td>
+                        <td><a href="#finolex">View Reviews</a></td>
+                    </tr>
+                    <tr>
+                        <td>Power Cable</td>
+                        <td>RR Kabel</td>
+                        <td>⭐⭐⭐⭐☆ (4.6)</td>
+                        <td><a href="#rrkabel">View Reviews</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Reviews Section -->
+        <div class="reviews" id="havells">
+            <h2>Reviews for Havells</h2>
+            <p>"Great quality copper wire. Long-lasting and reliable!" - <b>John D.</b></p>
+            <p>"Perfect for home installations, easy to use." - <b>Emily R.</b></p>
+        </div>
+
+        <div class="reviews" id="polycab">
+            <h2>Reviews for Polycab</h2>
+            <p>"Best in the market for its price range." - <b>Mark L.</b></p>
+            <p>"The insulation is very durable and safe." - <b>Alice W.</b></p>
+        </div>
+
+        <div class="reviews" id="finolex">
+            <h2>Reviews for Finolex</h2>
+            <p>"Outstanding performance for data cables." - <b>Jessica T.</b></p>
+            <p>"Fast and reliable data transmission, highly recommended!" - <b>Sam K.</b></p>
+        </div>
+
+        <div class="reviews" id="rrkabel">
+            <h2>Reviews for RR Kabel</h2>
+            <p>"Excellent product for industrial use." - <b>Michael B.</b></p>
+            <p>"Very safe and well-insulated." - <b>Sarah P.</b></p>
+        </div>
+    </div>
+</body>
+</html>

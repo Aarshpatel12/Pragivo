@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual AI Home Modification</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body><div id="top_nav_bar">
+    <nav>
+        <ul class="nav_buttons">
+          <li><a href="home2.html">Home</a></li>
+          <li><a href="reel.html">Reel</a></li>
+          <li><a href="rating.html">Rating/Compare</a></li>
+          <li><a href="expert.html">Expert Connect(Architect/Design/Electricians)</a></li>
+          <li><a href="vertual.html">Vertual AI home-modification</a></li>
+          <li><a href="service.html">Service</a></li>
+        </ul>
+    </nav>
+</div>
+    <header>
+        <h1>Virtual AI Home Modification</h1>
+    </header>
+    <main>
+        <section class="home-model-section">
+            <h2>Choose Your Home Model</h2>
+            <select id="homeModelSelector" onchange="updateHomeModel()">
+                <option value="model1">Modern Villa</option>
+                <option value="model2">Traditional Cottage</option>
+                <option value="model3">Luxury Mansion</option>
+            </select>
+            <div id="homeModelDisplay">
+                <div class="home-container" id="homeContainer">
+                    <img id="homeImage" src="p5.jpg" alt="Home Model">
+                </div>
+            </div>
+        </section>
+
+        <section class="customization-section">
+            <h2>Customize Your Home</h2>
+
+            <div class="customization-options">
+                <!-- Wall Color -->
+                <div>
+                    <h3>Wall Color</h3>
+                    <div class="color-palette">
+                        <button class="color-button" style="background-color: #FF5733;" onclick="changePartColor('wall', '#FF5733')"></button>
+                        <button class="color-button" style="background-color: #33FF57;" onclick="changePartColor('wall', '#33FF57')"></button>
+                        <button class="color-button" style="background-color: #3357FF;" onclick="changePartColor('wall', '#3357FF')"></button>
+                    </div>
+                </div>
+
+                <!-- Roof Shade -->
+                <div>
+                    <h3>Roof Shade</h3>
+                    <div class="color-palette">
+                        <button class="color-button" style="background-color: #8E44AD;" onclick="changePartColor('roof', '#8E44AD')"></button>
+                        <button class="color-button" style="background-color: #F1C40F;" onclick="changePartColor('roof', '#F1C40F')"></button>
+                        <button class="color-button" style="background-color: #34495E;" onclick="changePartColor('roof', '#34495E')"></button>
+                    </div>
+                </div>
+
+                <!-- Border Color -->
+                <div>
+                    <h3>Border Color</h3>
+                    <div class="color-palette">
+                        <button class="color-button" style="background-color: #E74C3C;" onclick="changePartColor('border', '#E74C3C')"></button>
+                        <button class="color-button" style="background-color: #2ECC71;" onclick="changePartColor('border', '#2ECC71')"></button>
+                        <button class="color-button" style="background-color: #3498DB;" onclick="changePartColor('border', '#3498DB')"></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+    <section class="ai-home-generator">
+        <h2>AI Home Generator</h2>
+        <form id="homeGeneratorForm" onsubmit="generateHome(event)">
+            <label for="door">Choose Door Type:</label>
+            <select id="door">
+                <option value="wooden">Wooden Door</option>
+                <option value="glass">Glass Door</option>
+                <option value="modern">Modern Door</option>
+            </select>
+    
+            <label for="furniture">Choose Furniture Style:</label>
+            <select id="furniture">
+                <option value="classic">Classic Furniture</option>
+                <option value="modern">Modern Furniture</option>
+                <option value="minimal">Minimalistic Furniture</option>
+            </select>
+    
+            <label for="windows">Choose Window Type:</label>
+            <select id="windows">
+                <option value="sliding">Sliding Windows</option>
+                <option value="bay">Bay Windows</option>
+                <option value="arched">Arched Windows</option>
+            </select>
+    
+            <button type="submit">Generate Home</button>
+        </form></select>
+        <div id="homeModelDisplay">
+            <div class="home-container" id="homeContainer">
+                <img id="homeImage" src="p3.jpg" alt="Home Model">
+            </div>
+        </div>
+    </section>
+    
+        <div id="generatedHomePreview">
+            <h3>Generated Home Preview</h3>
+            <div id="previewContainer" class="preview-container">
+                <div id="doorPreview">Door: None</div>
+                <div id="furniturePreview">Furniture: None</div>
+                <div id="windowsPreview">Windows: None</div>
+            </div>
+        </div>
+    </section>
+    
+</body>
+</html>

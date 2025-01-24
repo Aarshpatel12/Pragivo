@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electrician</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Electrician - Chat and Video Call</h1>
+    </header>
+
+    <main class="container">
+        <div class="chat-box">
+            <h3>Chat</h3>
+            <div id="chat-electrician" class="chat-messages"></div>
+            <input type="text" id="message-electrician" placeholder="Type a message">
+            <button onclick="sendMessage('electrician')">Send</button>
+        </div>
+        <div class="video-box">
+            <h3>Video Call</h3>
+            <button onclick="startVideoCall('https://meet.jit.si/ElectricianConsultation')">Start Video Call</button>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

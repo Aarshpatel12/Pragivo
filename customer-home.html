@@ -1,0 +1,25 @@
+<!-- Booking Modal Structure -->
+<div id="bookingModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h2>Book Service: <span id="selectedService"></span></h2>
+
+        <!-- Booking Form -->
+        <form id="bookingForm" onsubmit="submitBooking(event)">
+            <label for="photoUpload">Upload a photo:</label>
+            <input type="file" id="photoUpload" accept="image/*" required><br>
+
+            <label for="serviceDetails">Describe your requirement:</label>
+            <textarea id="serviceDetails" rows="4" required></textarea><br>
+
+            <button type="submit">Submit Booking</button>
+        </form>
+
+        <!-- Service Type Options (Displayed after booking) -->
+        <div id="serviceTypeOptions" style="display: none;">
+            <h3>Choose Service Type:</h3>
+            <button onclick="chooseServiceType('Instant Service')">Instant Service</button>
+            <button onclick="chooseServiceType('Book for Later')">Book for Later</button>
+        </div>
+    </div>
+</div>  

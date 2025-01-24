@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pragati - Reels</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="top_nav_bar">
+        <nav>
+            <ul class="nav_buttons">
+                <li><a href="home2.html">Home</a></li>
+          <li><a href="reel.html">Reel</a></li>
+          <li><a href="rating.html">Rating/Compare</a></li>
+          <li><a href="expert.html">Expert Connect(Architect/Design/Electricians)</a></li>
+          <li><a href="vertual.html">Vertual AI home-modification</a></li>
+          <li><a href="service.html">Service</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="upload-container">
+        <!-- Floating Upload Button -->
+        <form id="upload-form" enctype="multipart/form-data" action="upload_reel.php" method="post">
+            <input type="file" id="reel-file" name="reel-file" accept="video/mp4,video/x-m4v,video/*" style="display:none;" onchange="document.getElementById('upload-form').submit();">
+            <button type="button" class="upload-btn" onclick="document.getElementById('reel-file').click();">
+                +
+            </button>
+        </form>
+    </div>
+
+    <div class="reels-container">
+        <div class="reel">
+            <video controls autoplay loop muted>
+                <source src="reel1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="reel">
+            <video controls autoplay loop muted>
+                <source src="reel2.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="reel">
+            <video controls autoplay loop muted>
+                <source src="reel3.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+
+    <script>
+        // Smooth scroll for reels
+        const container = document.querySelector('.reels-container');
+        container.addEventListener('wheel', (e) => {
+            e.preventDefault();
+            container.scrollBy({
+                top: e.deltaY,
+                left: 0,
+                behavior: 'smooth',
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Worker's Feed</title>
+    <link rel="stylesheet" href="worker-home.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body><div id="background_img">  
+    <div id="top_nav_bar">
+      <nav>
+          <ul class="nav_buttons">
+              
+              <li><a href="reelw.html">Learn</a></li>
+              <li><a href="1notifications.html" class="notification-btn">Notifications</a></li>
+              <li><a href="1profile.html" class="profile-btn">Profile</a></li>
+              
+          </ul>
+      </nav>
+  </div>
+  
+    <div class="worker-feed">
+        <h2>Worker's Feed</h2>
+
+        <!-- 20 Posts for Worker Feed -->
+        <div class="post">
+            <img src="post1.jpg" alt="Work required" class="post-image">
+            <div class="post-content">
+                <p class="post-description">Plumbing work needed in the kitchen sink area.</p>
+                <button onclick="toggleInterest(this)" class="interested-btn">Interested</button>
+                <div class="comment-section">
+                    <input type="text" placeholder="Add a comment..." class="comment-input">
+                    <button onclick="addComment(this)" class="comment-btn">Comment</button>
+                </div>
+                <ul class="comments-list"></ul>
+            </div>
+        </div>
+        
+        <!-- Repeat for more posts with different images and descriptions -->
+        
+        <div class="post">
+            <img src="post2.jpg" alt="Electrical work" class="post-image">
+            <div class="post-content">
+                <p class="post-description">Electrical work needed for lighting installation.</p>
+                <button onclick="toggleInterest(this)" class="interested-btn">Interested</button>
+                <div class="comment-section">
+                    <input type="text" placeholder="Add a comment..." class="comment-input">
+                    <button onclick="addComment(this)" class="comment-btn">Comment</button>
+                </div>
+                <ul class="comments-list"></ul>
+            </div>
+        </div>
+
+        <!-- Additional posts up to 20, with unique descriptions -->
+        <div class="post">
+            <img src="post3.jpg" alt="Painting job" class="post-image">
+            <div class="post-content">
+                <p class="post-description">Painting needed for the living room walls.</p>
+                <button onclick="toggleInterest(this)" class="interested-btn">Interested</button>
+                <div class="comment-section">
+                    <input type="text" placeholder="Add a comment..." class="comment-input">
+                    <button onclick="addComment(this)" class="comment-btn">Comment</button>
+                </div>
+                <ul class="comments-list"></ul>
+            </div>
+        </div>
+
+        <div class="post">
+            <img src="post4.jpg" alt="Carpentry" class="post-image">
+            <div class="post-content">
+                <p class="post-description">Custom carpentry for new kitchen cabinets.</p>
+                <button onclick="toggleInterest(this)" class="interested-btn">Interested</button>
+                <div class="comment-section">
+                    <input type="text" placeholder="Add a comment..." class="comment-input">
+                    <button onclick="addComment(this)" class="comment-btn">Comment</button>
+                </div>
+                <ul class="comments-list"></ul>
+            </div>
+        </div>
+
+        <!-- Add more posts, each one uniquely described -->
+        <div class="post">
+            <img src="post5.jpg" alt="Bathroom plumbing" class="post-image">
+            <div class="post-content">
+                <p class="post-description">Plumbing repair needed in the bathroom.</p>
+                <button onclick="toggleInterest(this)" class="interested-btn">Interested</button>
+                <div class="comment-section">
+                    <input type="text" placeholder="Add a comment..." class="comment-input">
+                    <button onclick="addComment(this)" class="comment-btn">Comment</button>
+                </div>
+                <ul class="comments-list"></ul>
+            </div>
+        </div>
+
+        <!-- Continue with similar structure for remaining posts -->
+
+        <!-- Example for post 20 -->
+        <div class="post">
+            <img src="post6.jpg" alt="Gutter cleaning" class="post-image">
+            <div class="post-content">
+                <p class="post-description">Need assistance with gutter cleaning on the roof.</p>
+                <button onclick="toggleInterest(this)" class="interested-btn">Interested</button>
+                <div class="comment-section">
+                    <input type="text" placeholder="Add a comment..." class="comment-input">
+                    <button onclick="addComment(this)" class="comment-btn">Comment</button>
+                </div>
+                <ul class="comments-list"></ul>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="worker-home.js"></script>
+    <button class="profile-btn" onclick="window.location.href='1profile.html'">Profile</button>
+    <button class="notification-btn" onclick="window.location.href='1notifications.html'">Notifications</button>
+
+
+</body>
+</html>

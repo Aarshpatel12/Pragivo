@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schedule a Service</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="schedule-container">
+        <h1>Schedule Your Service</h1>
+        <p>Please choose a date and time for the worker's visit.</p>
+
+        <!-- Date Selection -->
+        <div class="dates-container">
+            <h2>Select a Date</h2>
+            <div class="dates-grid">
+                <!-- Date Buttons -->
+                <button class="date-btn">2024-11-20</button>
+                <button class="date-btn">2024-11-21</button>
+                <button class="date-btn">2024-11-22</button>
+                <button class="date-btn">2024-11-23</button>
+                <button class="date-btn">2024-11-24</button>
+            </div>
+        </div>
+
+        <!-- Time Selection -->
+        <div class="times-container">
+            <h2>Select a Time</h2>
+            <div class="times-grid">
+                <!-- Time Buttons -->
+                <button class="time-btn">10:00 AM</button>
+                <button class="time-btn">12:00 PM</button>
+                <button class="time-btn">02:00 PM</button>
+                <button class="time-btn">04:00 PM</button>
+                <button class="time-btn">06:00 PM</button>
+            </div>
+        </div>
+
+        <button id="submit-btn"><a href="payment1.html">Schedule Service</a></button>
+    </div>
+
+    <script>
+        let selectedDate = null;
+        let selectedTime = null;
+
+        // Handle date selection
+        const dateBtns = document.querySelectorAll('.date-btn');
+        dateBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Deselect all date buttons
+                dateBtns.forEach(b => b.classList.remove('selected'));
+                btn.classList.add('selected');
+                selectedDate = btn.textContent;
+            });
+        });
+
+        // Handle time selection
+        const timeBtns = document.querySelectorAll('.time-btn');
+        timeBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Deselect all time buttons
+                timeBtns.forEach(b => b.classList.remove('selected'));
+                btn.classList.add('selected');
+                selectedTime = btn.textContent;
+            });
+        });
+
+        // Handle submit
+        document.getElementById('submit-btn').addEventListener('click', () => {
+            if (selectedDate && selectedTime) {
+                alert(`Service scheduled for ${selectedDate} at ${selectedTime}.`);
+                // You can replace the alert with any backend call for storing the schedule
+            } else {
+                alert("Please select both a date and a time.");
+            }
+        });
+    </script>
+</body>
+</html>

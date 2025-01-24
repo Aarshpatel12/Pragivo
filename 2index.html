@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <link rel="stylesheet" href="2index.css">
+</head>
+<body>
+    <div class="landing">
+        <h1>Are you a Worker or a Customer?</h1>
+        <button onclick="redirectToSignIn('worker')">Worker</button>
+        <button onclick="redirectToSignIn('customer')">Customer</button>
+    </div>
+    <script>
+        function redirectToSignIn(userType) {
+            window.location.href = `signin.html?type=${userType}`;
+        }
+    </script>
+</body>
+</html>

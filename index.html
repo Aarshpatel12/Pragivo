@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pragati - Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: Arial, sans-serif;
+            background-image: url('background.jpg'); /* Replace with the path to your image */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        /* Additional styles for index.html can go here */
+        .content {
+            text-align: center;
+            padding: 20px;
+            color: white; /* Change text color for better visibility */
+        }
+
+        .role-button {
+            padding: 10px 20px;
+            margin: 10px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .worker-button {
+            background-color: #4CAF50; /* Green */
+            color: white;
+        }
+
+        .customer-button {
+            background-color: #008CBA; /* Blue */
+            color: white;
+        }
+
+        .role-button:hover {
+            opacity: 0.8; /* Slightly transparent on hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h1>Welcome to Pragati</h1>
+        <p>Your one-stop solution for all your needs.</p>
+        <h2>Are you a Worker or a Customer?</h2>
+        <div class="buttons">
+            <button class="role-button worker-button" onclick="redirectToSignIn('worker')">Worker</button>
+            <button class="role-button customer-button" onclick="redirectToSignIn('customer')">Customer</button>
+        </div>
+    </div>
+
+    <script>
+        function redirectToSignIn(userType) {
+            window.location.href = `signin.html?type=${userType}`;
+        }
+    </script>
+</body>
+</html> 

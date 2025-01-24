@@ -1,0 +1,62 @@
+/* Basic styling updates */
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    scroll-behavior: smooth;
+  }
+  
+  /* Modal styling */
+  .modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .modal-content {
+    position: relative;
+  }
+  
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 20px;
+  }
+  
+  .modal-input, .modal-btn {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  /* Suggestions styling */
+  .suggestions {
+    position: relative;
+    max-height: 100px;
+    overflow-y: auto;
+    background-color: white;
+    border: 1px solid #ddd;
+  }
+  
+  .suggestions p {
+    padding: 10px;
+    margin: 0;
+    cursor: pointer;
+  }
+  
+  /* Service hover effect */
+  .service-item:hover {
+    transform: scale(1.05);
+    transition: 0.3s ease;
+  }
+  

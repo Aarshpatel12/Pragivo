@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Photos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div id="top_nav_bar">
+        <nav>
+            <ul class="nav_buttons">
+                <li><a href="home2.html">Home</a></li>
+                <li><a href="reel.html">Reel</a></li>
+                <li><a href="rating.html">Rating</a></li>
+                <li><a href="service.html">Service</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="upload-container">
+        <h1>Upload Problem </h1>
+        <p>We'd love to see your beautiful furniture! Please upload photos of your furniture below:</p>
+
+        <!-- Upload Form -->
+        <form action="/submit-photo" method="POST" enctype="multipart/form-data">
+            <label for="furniture-photo">Select Furniture Photo:</label>
+            <input type="file" id="furniture-photo" name="furniture-photo" accept="image/*" required>
+            <br><br>
+
+            <label for="furniture-description">Describe Your Furniture:</label>
+            <textarea id="furniture-description" name="furniture-description" rows="4" placeholder="Provide a description of the furniture" required></textarea>
+            <br><br>
+
+            <button type="submit"><a href="choosing-service.html">UPLOAD</a></button>
+            
+        </form>
+    </div>
+
+</body>
+</html>

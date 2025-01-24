@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pragati-Home Page</title>
+    <link rel="stylesheet" href="Home-Pagefd.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/f75e97ac39.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4; /* Light background for contrast */
+            margin: 0; /* Remove default margin */
+            padding: 0; /* Remove default padding */
+        }
+
+        #background_img {
+            padding: 20px;
+        }
+
+        #top_nav_bar {
+            background-color: #3498db; /* Header color */
+            padding: 10px;
+        }
+
+        .nav_buttons {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .nav_buttons li {
+            margin: 0 15px;
+        }
+
+        .nav_buttons a {
+            text-decoration: none;
+            color: white;
+            font-size: 1rem;
+            transition: color 0.3s;
+        }
+
+        .nav_buttons a:hover {
+            color: #4caf50;
+        }
+
+        .pinterest-section {
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px; /* Add margin to push it down */
+        }
+
+        .pinterest-section h1 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #4caf50;
+        }
+
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr); /* Four images per row */
+            gap: 30px; /* Increased space between images */
+            padding: 0 20px;
+        }
+
+        .grid-item {
+            width: 100%; /* Full width for images */
+            height: 200px; /* Fixed height for images to maintain 1:1 ratio */
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .grid-item img {
+            width: 100%; /* Full width for images */
+            height: 100%; /* Full height for images */
+            object-fit: cover; /* Maintain aspect ratio */
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+
+        .grid-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .grid-item img:hover {
+            transform: scale(1.1);
+        }
+
+        /* Upload Section */
+        .upload-section {
+            margin: 20px auto;
+            text-align: center;
+        }
+
+        .upload-btn {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 1rem;
+            color: white;
+            background-color: #4caf50;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .upload-btn:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+<div id="background_img">  
+  <div id="top_nav_bar">
+    <nav>
+        <ul class="nav_buttons">
+          <li><a href="home2.html">Home</a></li>
+          <li><a href="reel.html">Reel</a></li>
+          <li><a href="rating.html">Rating/Compare</a></li>
+          <li><a href="expert.html">Expert Connect(Architect/Design/Electricians)</a></li>
+          <li><a href="vertual.html">Virtual AI home-modification</a></li>
+          <li><a href="service.html">Service</a></li>
+        </ul>
+    </nav>
+</div>
+<hr> 
+<div class="pinterest-section">
+    <h1>Explore and Share Ideas</h1>
+    <div class="image-grid">
+      <div class="grid-item"><img src="p1.jpg" alt="p1"></div>
+      <div class="grid-item"><img src="p2.jpg" alt="p2"></div>
+      <div class="grid-item"><img src="p3.jpg" alt="p3"></div>
+      <div class="grid-item"><img src="p4.jpg" alt="p4"></div>
+      <div class="grid-item"><img src="p5.jpg" alt="p5"></div>
+      <div class="grid-item"><img src="p6.jpg" alt="p6"></div>
+      <div class="grid-item"><img src="p7.jpg" alt="p7"></div>
+      <div class="grid-item"><img src="p8.jpg" alt="p8"></div>
+      <div class="grid-item"><img src="p9.jpg" alt="p9"></div>
+      <div class="grid-item"><img src="p10.jpg" alt="p10"></div>
+      <div class="grid-item"><img src="p11.jpg" alt="p11"></div>
+      <div class="grid-item"><img src="p12.jpg" alt="p12"></div>
+      <div class="grid-item"><img src="p13.jpg" alt="p13"></div>
+      <div class="grid-item"><img src="p14.jpg" alt="p14"></div>
+      <div class="grid-item"><img src="p15.jpg" alt="p15"></div>
+      <div class="grid-item"><img src="p16.jpg" alt="p16"></div>
+      <div class="grid-item"><img src="p17.jpg" alt="p17"></div>
+      <div class="grid-item"><img src="p18.jpg" alt="p18"></div>
+      <div class="grid-item"><img src="p19.jpg" alt="p19"></div>
+  </div>
+    <!-- Upload Button -->
+    <div class="upload-section">
+        <label for="imageUpload" class="upload-btn">Upload Image</label>
+        <input type="file" id="imageUpload" accept="image/*" style="display: none;">
+    </div>
+  </div>
+  <script src="login.js"></script>
+</div>
+</body>
+</html>

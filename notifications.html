@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notifications</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your main styles -->
+    <link rel="stylesheet" href="notifications.css"> <!-- Specific styles for notifications -->
+</head>
+<body>
+    <header>
+        <h1>Notifications</h1>
+    </header>
+    <main class="notifications-container">
+        <ul id="notification-list">
+            <li class="notification-card">
+                <strong>New plumbing job posted in your area.</strong>
+                <p>This job requires immediate attention. Click here to apply.</p>
+                <span class="timestamp">2 hours ago</span>
+            </li>
+            <li class="notification-card">
+                <strong>Your profile was viewed 10 times today.</strong>
+                <p>Make sure your profile is up to date to attract more clients!</p>
+                <span class="timestamp">3 hours ago</span>
+            </li>
+            <li class="notification-card">
+                <strong>Electrician job near you requires attention.</strong>
+                <p>Don't miss out on this opportunity!</p>
+                <span class="timestamp">5 hours ago</span>
+            </li>
+            <!-- Add more notifications as needed -->
+        </ul>
+        <button onclick="clearNotifications()">Clear All</button>
+    </main>
+    <script src="notifications.js"></script>
+</body>
+</html> 
